@@ -33,17 +33,17 @@
         var x = 1;
         function bar() {
             var x = 'A';
-            alert('x in bar() = ' + x); // 'A'
+//            alert('x in bar() = ' + x); // 'A'
         }
-        alert('x in foo() = ' + x); // 1
+//        alert('x in foo() = ' + x); // 1
         bar();
     }
 
 //    m.name = "123";
 //    console.log(m.name);
      myapp.course = 'Learn Javascript';
-    alert(myapp.course);
-    alert(window.myapp.course);
+//    alert(myapp.course);
+//    alert(window.myapp.course);
 
 </script>
 
@@ -63,7 +63,7 @@
             throw 'Not a number';
         }
         if(x>=0){
-            alert(arguments[1]);   //arguments 它只在函数内部起作用，并且永远指向当前函数的调用者传入的所有参数
+//            alert(arguments[1]);   //arguments 它只在函数内部起作用，并且永远指向当前函数的调用者传入的所有参数
             return x;
         }else{
             return -x;
@@ -157,5 +157,22 @@
 
 </script>
 
+<script>
+    //高阶函数
+    function add(x,y,f){
+        return f(x) +f(y);
+
+    }
+
+    add(-5,6,Math.abs);
+
+    //map/reduce
+    function pow(x){
+        return x*x;
+    }
+    var arr = [1,2,3,4,5,6];
+    var arrs = arr.map(pow);
+
+</script>
 </body>
 </html>
