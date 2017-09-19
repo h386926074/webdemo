@@ -7,6 +7,46 @@
     </style>
 </head>
 <body>
+
+
+<script>
+
+    //变量作用域  这说明JavaScript的函数在查找变量时从自身函数定义开始，
+    // 从“内”向“外”查找。
+    // 如果内部函数定义了与外部函数重名的变量，
+    // 则内部函数的变量将“屏蔽”外部函数的变量。
+    // 从函数内部 从内到外 依次查找  如果内部没有定义这个函数 才向外部函数查找
+    'use strict';
+
+    //不在任何函数内定义的变量就具有全局作用域
+    //实际上，JavaScript默认有一个全局对象window，
+    // 全局作用域的变量实际上被绑定到window的一个属性：
+
+
+
+    var myapp = {};
+    myapp.name = 'myapp';
+    myapp.version = 1.0;
+
+        function foo() {
+
+        var x = 1;
+        function bar() {
+            var x = 'A';
+            alert('x in bar() = ' + x); // 'A'
+        }
+        alert('x in foo() = ' + x); // 1
+        bar();
+    }
+
+//    m.name = "123";
+//    console.log(m.name);
+     myapp.course = 'Learn Javascript';
+    alert(myapp.course);
+    alert(window.myapp.course);
+
+</script>
+
 <script>
     'use strict';
     var m = new Map();
@@ -15,6 +55,105 @@
 
     var m = new Map([['Michael',95],['Bob',75],['Tracy',85]]);
     var s =  m.get('Michael');
+
+    var property_value = Math.SQRT1_2;
+    var abs =function(x) {
+
+        if(typeof x !== 'number'){
+            throw 'Not a number';
+        }
+        if(x>=0){
+            alert(arguments[1]);   //arguments 它只在函数内部起作用，并且永远指向当前函数的调用者传入的所有参数
+            return x;
+        }else{
+            return -x;
+        }
+
+    };
+
+    abs(5);
+
+
+    
+     function restt(a, b, ...rest) {
+        console.log(rest);
+    }
+
+    restt(1,2,3,4,5);
+
+
+     //测试
+
+
+
+
+</script>
+
+<script>
+    //let代替 var 可以申明一个 块级作用域的变量
+    'use strict';
+    function foo() {
+        var sum = 0;
+        for (let i =0;i<100;i++){
+            sum += i;
+        }
+
+        console.log("----- "+sum );
+    }
+    foo();
+</script>
+
+<SCRIPT>
+    var xiaoming = {
+        name:'小明',
+        birth:1990,
+        age:function () {
+        var y = new Date().getFullYear();
+            return y-this.birth;    //this 始终指向当前对象   如果是子函数 也会报错  在一级函数才有效
+        }
+    };
+
+    xiaoming.age();
+
+
+
+
+</SCRIPT>
+<script>
+
+    function getAge() {
+        var y = new Date().getFullYear();
+        return y - this.birth;
+    }
+
+    var ming = {
+      name:'小明',
+        birth :1998,
+        age:getAge
+    };
+
+    xiaoming.age();
+    //apply   绑定this 变量 第二个参数是array
+    getAge.apply(xiaoming,[]);
+</script>
+
+<script>
+//apply()把参数打包成Array再传入；
+
+//call()把参数按顺序传入。
+    Math.max.apply(null,[3,5,4]);
+    Math.max.call(null,3,4,5);
+
+    var count = 0;
+    var oldParseInt = getAge;
+    window.getAge = function () {
+        count +=1;
+        return oldParseInt.apply(null,arguments);
+    };
+    getAge('10');
+    getAge('2');
+    getAge('1');
+    
 
 </script>
 
