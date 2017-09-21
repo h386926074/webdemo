@@ -3,16 +3,24 @@
     <meta charset="utf-8">
     <title>javascript map/set</title>
     <style>
-
+        .content{
+            background: red;
+            text-align: center;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
+
+
+
+
 
 <!--<div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/224152nu2dlk01exfpfxld.jpg" style="max-width:100%"/></div>&nbsp; &nbsp;&nbsp; &nbsp;7月14日，《魅力中国城》十堰竞演团队与茂名竞演团队在央视同台PK，十堰前两轮投票落后茂名51票，最后一轮反超，最终以1314比1294赢得胜利。这是十堰和茂名的一生一世。&nbsp; &nbsp;&nbsp; &nbsp; 因为PK，我们相互认识，相互熟悉，相互欣赏。我们发现，一个居秦巴山区，一个坐南粤海滨。十堰有大山的坚强，茂名有大海的风情。这是十堰和茂名的山盟海誓。<br />-->
 <!--<div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/224039cq999692z29ju1u6.jpg" style="max-width:100%"/></div>&nbsp; &nbsp; 在十堰市旅游委、十堰车务段等部门的支持下，十堰日报传媒集团旗下的湖北当当文化旅游开发有限公司，积极与茂名市相关部门和旅游企业联系对接，经过多次沟通协调，最终确定在9月19日互开旅游专线。十堰和茂名从一生一世到山盟海誓。<br />-->
 <!--<div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230045jzz9nn9h4l4xzs5x.jpg" style="max-width:100%"/></div><br />-->
 <!--<div align="left">&nbsp; &nbsp;&nbsp;&nbsp;一起同行的朋友开玩笑说，出去旅游一次，还有这么多人欢送，这么大的场面，旅游生涯中第一次，1999元的价格，19999元未必有的待遇啊。</div><br />-->
-<!--<div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230046bvy7qasbav2wq23v.jpg\" style="max-width:100%"/></div><br /><div align=\"center\">专门的VIP绿色通道。</div><br /><div align=\"center\"><img src=\"http://img.10yan.com/data/attachment/forum/201709/20/230046wtmy88mb8gxmm2y5.jpg\" style=\"max-width:100%\"/></div><br /><div align=\"center\">这么大的阵容感觉真的不一样。</div><br /><div align=\"center\"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230046qa6k7t7kghzeqh6p.jpg\" style=\"max-width:100%\"/></div><br /><div align=\"center\">提前排队上车。</div><br /><div align=\"center\"><img src=\"http://img.10yan.com/data/attachment/forum/201709/20/230047rq1l5ve4b5a1545v.jpg\" style=\"max-width:100%\"/></div><br /><div align=\"center\">茂名，我们来了！</div><br /><div align=\"center\"><img src=\"http://img.10yan.com/data/attachment/forum/201709/20/230047d3b3v63eslvsnnsk.jpg\" style=\"max-width:100%\"/></div><br /><div align=\"center\"><img src=\"http://img.10yan.com/data/attachment/forum/201709/20/230146p6zc6c6jbjwaaz09.jpg\" style=\"max-width:100%\"/></div><br /><div align=\"center\">下午4点多，列车从十堰出发前往广州。</div><br /><br />-->
+<!--<div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230046bvy7qasbav2wq23v.jpg" style="max-width:100%"/></div><br /><div align="center">专门的VIP绿色通道。</div><br /><div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230046wtmy88mb8gxmm2y5.jpg" style="max-width:100%"/></div><br /><div align="center">这么大的阵容感觉真的不一样。</div><br /><div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230046qa6k7t7kghzeqh6p.jpg" style="max-width:100%"/></div><br /><div align="center">提前排队上车。</div><br /><div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230047rq1l5ve4b5a1545v.jpg" style="max-width:100%"/></div><br /><div align="center">茂名，我们来了！</div><br /><div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230047d3b3v63eslvsnnsk.jpg" style="max-width:100%"/></div><br /><div align="center"><img src="http://img.10yan.com/data/attachment/forum/201709/20/230146p6zc6c6jbjwaaz09.jpg" style="max-width:100%"/></div><br /><div align="center">下午4点多，列车从十堰出发前往广州。</div><br /><br />-->
 
 
 
@@ -85,7 +93,7 @@
     myapp.name = 'myapp';
     myapp.version = 1.0;
 
-        function foo() {
+    function foo() {
 
         var x = 1;
         function bar() {
@@ -96,11 +104,11 @@
         bar();
     }
 
-//    m.name = "123";
-//    console.log(m.name);
-     myapp.course = 'Learn Javascript';
-//    alert(myapp.course);
-//    alert(window.myapp.course);
+    //    m.name = "123";
+    //    console.log(m.name);
+    myapp.course = 'Learn Javascript';
+    //    alert(myapp.course);
+    //    alert(window.myapp.course);
 
 </script>
 
@@ -132,20 +140,20 @@
     abs(5);
 
 
-    
-     function restt(a, b, ...rest) {
+
+    function restt(a, b, ...rest) {
+
         console.log(rest);
     }
 
+
+
+
+    //测试
     restt(1,2,3,4,5);
 
-
-     //测试
-
-
-
-
 </script>
+
 
 <script>
     //let代替 var 可以申明一个 块级作用域的变量
@@ -166,7 +174,7 @@
         name:'小明',
         birth:1990,
         age:function () {
-        var y = new Date().getFullYear();
+            var y = new Date().getFullYear();
             return y-this.birth;    //this 始终指向当前对象   如果是子函数 也会报错  在一级函数才有效
         }
     };
@@ -185,7 +193,7 @@
     }
 
     var ming = {
-      name:'小明',
+        name:'小明',
         birth :1998,
         age:getAge
     };
@@ -196,9 +204,9 @@
 </script>
 
 <script>
-//apply()把参数打包成Array再传入；
+    //apply()把参数打包成Array再传入；
 
-//call()把参数按顺序传入。
+    //call()把参数按顺序传入。
     Math.max.apply(null,[3,5,4]);
     Math.max.call(null,3,4,5);
 
@@ -211,7 +219,7 @@
     getAge('10');
     getAge('2');
     getAge('1');
-    
+
 
 </script>
 
@@ -248,7 +256,7 @@
 
     //去除重复字符串
     rs = ars.filter(function (element,index,self) {
-       return self.indexOf(element) === index;
+        return self.indexOf(element) === index;
     });
 
 
@@ -256,9 +264,9 @@
     //比较函数来实现自定义排序
     var ars = [10,20,1,2];
     ars.sort(function (x,y) {
-       if(x>y){return 1;}else if(x<y){return -1;}else{
-           return 0;
-       }
+        if(x>y){return 1;}else if(x<y){return -1;}else{
+            return 0;
+        }
     });
 
 </script>
@@ -289,6 +297,31 @@
     (function (x) {
         return x*x;
     })(3);   //结果为9;  匿名闭包 并立即执行
+
+    'use strict';
+    function create_counter(initial) {
+        var x = initial || 0;
+        return {
+            inc:function () {
+                x+=1;
+                document.write("<div class=\"content\">xxxx</div><br/>");
+                return x;
+
+            }
+        }
+    }
+
+    var c1 = create_counter();
+    c1.inc();
+    c1.inc();
+    c1.inc();
+
+    var c2 = create_counter();
+    c2.inc();
+    c2.inc();
+
+
 </script>
 </body>
+
 </html>
