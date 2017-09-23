@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title> hello world!</title>
+</head>
+<bod>
+    <script>
+        document.write('hello world');
+
+        //generator  yield
+        //婓波那契 数列
+//        function  fun(max) {
+        //                var x = 1;
+        //                yield x;
+        //                if(x < max){
+        //
+        //                    x++;
+        //                    return x;
+        //                }
+        //
+        //        }
+
+        //Date
+
+        var d = new Date(2017,4,10,18,10,14);
+
+         d = Date.parse('2017-06-24T19:49:40.875+08:00');
+
+         var newd = new Date(d);
+
+         var locald = d.toLocaleString();
+//         var utcd = d.toUTCString();
+
+
+         //正则表达式 RegExp
+
+        var re1 = /abc\-001/;
+        var re2 = new RegExp('ABC\\-001');
+        var re = /^\d{3}\-\d{3,8}$/;
+
+
+        var xiaoming  = {
+
+            name:'小明',
+            age:14,
+            gender:true,
+            height:1.76,
+            grade:null,
+            'middle-school':'\"W3C\" Middle School',
+            skills:['javascript','Java','Python','Lisp']
+        };
+       var a =  JSON.stringify(xiaoming,null,' ');
+    </script>
+</bod>
+</html>

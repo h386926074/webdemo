@@ -269,12 +269,22 @@
     c2.inc();
 
     //箭头函数
-    var c3 = x => x*x;
+    var c3 = (x,y)=> x*y;    //如果参数不是一个 就用括号括起来
     c3(2);
 
+
+    var obj = {
+      birth:1990,
+      getAge:function () {
+          var b = this.birth;
+          var fn = () => new Date().getFullYear() - this.birth;
+          return fn();
+      }
+    };
+
+    obj.getAge();
+
     
-
-
 </script>
 </body>
 
