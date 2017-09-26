@@ -20,5 +20,115 @@
     精通CSS：高级web标准解决方案
     CSS禅意花园
     　精通CSS
+
+
+    <script>
+
+        //原型继承
+        function Student(props) {
+            this.name = props.name||"Unname";
+        }
+        Student.prototype.hello = function () {
+            alert('Hello, '+ this.name +'!');
+        }
+
+
+        function PrimaryStudent(props) {
+            Student.call(this,props);
+            this.grade = props.grade ||1;
+        }
+
+        function A(x) {
+            this.x = x;
+        }
+        A.prototype.a = 'a';
+        function B(x,y) {
+            this.y = y;
+            A.call(this,x);
+        }
+        B.prototype.b1 = function () {
+            alert('b1');
+        }
+        B.prototype = new A();
+        B.prototype.b2 = function () {
+            alert('b2');
+        }
+        B.prototype.constructor = B;
+        var obj = new B(1,3);
+
+
+/*
+* name = "张三";
+age = 18;
+
+function test(){
+    document.writeln(this);
+    document.writeln(this.name);
+    document.writeln(this.age);
+};
+
+// 全局函数内部的this默认为全局对象window
+test(); // [object Window] 张三 18
+
+
+var obj = {name: "李四", age: 20};
+// 更改内部的this指针引用对象为obj
+test.call(obj); // [object Object] 李四 20
+
+
+function foo(a, b){
+    document.writeln(this.name);
+    document.writeln(a);
+    document.writeln(b);
+}
+// 改变this引用为obj，同时传递两个参数
+foo.call(obj, 12, true); // 李四 12 true
+
+
+function bar(a, b){
+    var o = {name: "王五"};
+    // 调用foo()函数，并改变其this为对象o，传入参数a,b作为其参数
+    foo.call(o, a, b);
+}
+bar("CodePlayer", "www.365mini.com"); // 王五 CodePlayer www.365mini.com
+* */
+
+
+
+        var namee = "张三",agee = 18;
+        function test() {
+            document.writeln('</br>'+this);
+            document.writeln(this.namee);
+            document.writeln(this.agee);
+        }
+
+        test();
+
+        var obj = {namee:"李四",agee:20};
+        test.call(obj);//更改 this 内部的this 指针引用对象为 obj
+        //所以写入的数据是 李四 20
+
+        function foo(a, b) {
+            document.writeln(this);
+            document.writeln(this.namee);
+            document.writeln(this.agee);
+            document.writeln(a);
+            document.writeln(b);
+        }
+
+        foo();//此时 this 指向window
+        document.writeln("</br>");
+        foo.call(obj,12,true); //把this 指向obj  并传两个参数 对应 a,b
+
+        function bar(a, b) {
+            var o = {namee:"王五"};
+            foo.call(o,a,b);
+        }
+
+        bar(1,2);
+
+
+
+    </script>
 </bod>
 </html>
