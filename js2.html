@@ -49,6 +49,42 @@
             skills:['javascript','Java','Python','Lisp']
         };
        var a =  JSON.stringify(xiaoming,null,' ');
+
+       //构造函数
+        function Student(name) {
+            this.name = name;
+            this.hello  =function () {
+                alert('Hello , '+this.name+"!");
+
+            }
+        }
+        //要用到 new 来初始化一个对象  默认返回this 不需要在最后写return this   不用new 就是一个普通函数
+
+
+        function Person(name) {
+            this.name = name;
+        }
+
+        Person.prototype.hello = function () {
+          alert("Hello, "+ this.name +"!");
+        };
+
+
+        //
+        function Student(props) {
+            this.name = props.name || '匿名'; // 默认值为'匿名'
+            this.grade = props.grade || 1; // 默认值为1
+        }
+
+        Student.prototype.hello = function () {
+            alert('Hello, ' + this.name + '!');
+        };
+
+        function createStudent(props) {
+            return new Student(props || {})
+        }
+
+
     </script>
 </bod>
 </html>
