@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> 面向对象的程序设计 </title>
+
+</head>
+<body>
+   <h1 style="text-align:center;">Javascript高级程序设计</h1>
+
+   <script>
+       var person = {};
+       Object.defineProperties(person,"name",{
+
+           writable:false,
+           value:"huangeng"
+       });
+
+       alert(person.name);
+   </script>
+</body>
+</html>
