@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a1451a3-f3eb-45e2-a398-58ebc6d41005" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webtest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsadv_01.html" afterPath="$PROJECT_DIR$/jsadv_01.html" />
-    </list>
+    <list default="true" id="0a1451a3-f3eb-45e2-a398-58ebc6d41005" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -65,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/jsadv_01.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="75" column="26" lean-forward="false" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+              <caret line="75" column="25" lean-forward="true" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -233,12 +229,12 @@
       <workItem from="1505466789376" duration="1483000" />
       <workItem from="1505469023186" duration="11530000" />
       <workItem from="1506134267227" duration="12496000" />
-      <workItem from="1506397103605" duration="11686000" />
+      <workItem from="1506397103605" duration="13065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49808000" />
+    <option name="totallyTimeSpent" value="51187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="939" y="0" width="981" height="1080" extended-state="0" />
@@ -466,7 +462,7 @@
     <entry file="file://$PROJECT_DIR$/jsadv_01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="75" column="26" lean-forward="false" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+          <caret line="75" column="25" lean-forward="true" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
